@@ -94,13 +94,13 @@ class TicTacToe
   end
 
 
-  def play(board)
+  def play
     max_turns = 0
 
     until max_turns == 9
-        draw = draw?(board)
-        won = won?(board)
-        over = over?(board)
+        draw = draw?
+        won = won?
+        over = over?
 
         if draw
           puts "Cat's Game!"
@@ -112,7 +112,7 @@ class TicTacToe
           break
         end
 
-        turn(board)
+        turn
         max_turns += 1
     end
 
