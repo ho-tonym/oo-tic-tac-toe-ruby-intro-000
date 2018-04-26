@@ -106,7 +106,7 @@ class TicTacToe
           puts "Cat's Game!"
           break
         elsif won
-          puts "Congratulations #{board[won?[0]]}!"
+          puts "Congratulations #{@board[won?[0]]}!"
           break
         elsif over
           break
