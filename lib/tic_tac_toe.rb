@@ -129,7 +129,7 @@ class TicTacToe
       display_board
 
     else
-      turn(board)
+      turn
     end
 
   end
