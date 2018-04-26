@@ -39,8 +39,8 @@ class TicTacToe
   end
 
 
-  def full?(board)
-    board.none? do |position|
+  def full?
+    @board.none? do |position|
       position == nil || position == " "
     end
   end
