@@ -46,8 +46,8 @@ class TicTacToe
   end
 
   def draw?
-  won = won?(@board)
-  full = full?(@board)
+  won = won?
+  full = full?
 
     if won == false && full == true
       return true
@@ -62,7 +62,7 @@ class TicTacToe
 
 
   def over?
-    if won?(@board) || draw?(@board) || full?(@board)
+    if won? || draw? || full?
       return true
     end
   end
