@@ -151,11 +151,11 @@ class TicTacToe
     @board[index] = player_token
   end
 
-  def position_taken?(board, location)
-    if board[location] != " " && board[location] != ""
-      return true
-    else 
+  def position_taken?(board, index)
+    if board[index] != " " && board[index] != ""
       return false
+    else
+      return true
     end
   end
 
