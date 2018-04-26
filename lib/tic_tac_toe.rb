@@ -75,9 +75,9 @@ class TicTacToe
     return nil
   end
 
-  def turn_count(board)
+  def turn_count
   counter = 0
-    board.each do |numba|
+    @board.each do |numba|
       if numba == "X" || numba == "O"
         counter +=1
       end
